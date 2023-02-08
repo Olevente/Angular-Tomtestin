@@ -1,3 +1,13 @@
+/*
+* File: about.component.html
+* Author: Orosz Levente
+* Copyright: 2023, Orosz Levente
+* Group: Szoft-II-N
+* Date: 2023-02-08
+* Github: https://github.com/Olevente/
+* Licenc: GNU GPL
+*/
+
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
