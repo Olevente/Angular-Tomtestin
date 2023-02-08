@@ -12,9 +12,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { CalcComponent} from './calc/calc.component';
 
 const routes: Routes = [
-  {path:"about", component:AboutComponent}
+  {path:"about", component:AboutComponent},
+  {path:"calc", component:CalcComponent},
 ];
 
 @NgModule({
