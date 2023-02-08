@@ -20,7 +20,7 @@ import { Component, OnInit } from '@angular/core';
 export class CalcComponent implements OnInit {
   kg = new FormControl("");
   height = new FormControl("");
-  bodyindex = new FormControl("");
+  calc = new FormControl("");
 
   bodyindexVisible = false;
 
@@ -47,7 +47,7 @@ export class CalcComponent implements OnInit {
     let kg = Number(this.kg.value);
     let height = Number(this.height.value);
     let bodyindex = this.calcBodyIndex(kg,height);
-    this.bodyindex.setValue(String(bodyindex));
+    this.calc.setValue(String(bodyindex));
     this.bodyindexVisible = true;
 
   }

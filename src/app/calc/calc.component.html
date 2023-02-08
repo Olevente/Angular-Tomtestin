@@ -8,22 +8,24 @@
 * Licenc: GNU GPL
 -->
 
+
+
 <h2>Testtömeg-index (BMI) kalkulátor</h2>
 <h3>Feladat 323</h3>
 <div class="bodyindexForm">
-    <div class="mb-4"></div>
+    <div class="mb-4">
         <label for="">Kg: </label>
-        <input type="text" [formControl]="kg" class="form-control">
-</div>
+        <input type="text" placeholder="Kg" [formControl]="kg" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="">Magasság: </label>
+        <input type="text" placeholder="Magasság" [formControl]="height" class="form-control" (keyup)="onKeyup($event)">
+    </div>
 
-<div class="mb-4">
-    <label for="">Magasság: </label>
-    <input type="text" [formControl]="height" class="form-control" (keyup)="onKeyup($event)">
-</div>
+    <button (click)="onClickButton()" class="mb-4 btn">Számítás</button>
 
-<button (click)="onClickButton()" class="mb-4 btn btn-light">Számítás</button>
-
-<div class="mb-4" *ngIf="bodyindexVisible">
-    <label for="">BMI: </label>
-    <input type="text" readonly [formControl]="bodyindex" class="form-control">
+    <div class="mb-4" *ngIf="bodyindexVisible">
+        <label for="">BMI: </label>
+        <input type="text" placeholder="Testtömeg-index" readonly [formControl]="calc" class="form-control">
+    </div>
 </div>

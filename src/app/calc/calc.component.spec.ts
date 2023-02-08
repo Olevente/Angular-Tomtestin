@@ -7,7 +7,7 @@
 * Github: https://github.com/Olevente/
 * Licenc: GNU GPL
 */
-
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CalcComponent } from './calc.component';
