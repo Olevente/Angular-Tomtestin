@@ -1,5 +1,5 @@
 /*
-* File: about.component.html
+* File: app.component.spec.ts
 * Author: Orosz Levente
 * Copyright: 2023, Orosz Levente
 * Group: Szoft-II-N
